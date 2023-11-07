@@ -1,0 +1,39 @@
+#root {
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid rgb(139 141 92);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  background-color: #de9f7cb5;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  
+}
+@media screen and (max-width: 639px) {
+    
+  body {
+      font-size: 14px;
+  }
+  #root {
+    width: 400px;
+  }
+  h2 {
+      font-size: 20px;
+      font-weight: 700;
+  }
+  h1 {
+      margin-bottom: 18px;
+  }
+}
+@media screen and (max-width: 399px) {
+  body {
+      font-size: 12px;
+  }
+  #root {
+      width: 100%;
+  }
+}
