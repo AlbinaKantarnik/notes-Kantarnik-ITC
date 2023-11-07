@@ -1,18 +1,23 @@
 
 import './Note.css'
 import React, { useState } from 'react';
+import moment from 'moment';
+import NewNote from './NewNote';
 
 export default function Note() {
     const [inputValue, setInputValue] = useState('')
     const [todoList, setToDoList] = useState([])
 
     function addTodo(value) {
+        if (value.trim().length === 0) {
+        return; 
+        }
         const newTodo = {
             text: value,
-            created: new Date().toLocaleString()
+            created: moment().format('MMM Do h:mm A'),
         };
         const newToDoList = [newTodo,...todoList];
-        todoList.push(value)
+        // todoList.push(value)
         setToDoList(newToDoList);
         setInputValue('')
     }
@@ -20,22 +25,9 @@ export default function Note() {
     return (
         <>
             <div className='note'>
-
                 <textarea className='input-note' placeholder='Add new note ...' type="text" value={inputValue} onChange={(event) => { setInputValue(event.target.value) }} />
                 <button onClick={() => addTodo(inputValue)}>Add</button>
-
-                <div className="noteDiv">
-                    {
-                        todoList.map((item, index) => {
-                            return (<div key={index}>
-                                <p>My note: {item.text}</p>
-                                <p>Created: {item.created}</p>
-                            </div>)
-                        })
-                    }
-                </div>
-                
+                <NewNote todoList={todoList} setToDoList={setToDoList} />
             </div>
-
         </>)
 }

@@ -1,8 +1,10 @@
-## Kantarnik Albina
+# Kantarnik Albina
 
-# Milestone 1
-
+## Milestone 1
 * Create a basic form with an input (multiline textarea) and a button which allows the user to add notes
 * Every note added should have the note’s text and the note’s created date
 * Display the notes in a grid-like format.
 
+## Milestone 2
+* Display the date in human readable format: Aug 31th 12:30 PM
+* Add a delete button that when clicked,  prompts the user with a message “Are you sure you want to delete your note?” (you can use JavaScript's default global confirm() function). If the user hits confirm, delete the note from the list
