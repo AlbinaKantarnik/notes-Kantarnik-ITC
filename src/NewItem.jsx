@@ -3,8 +3,9 @@ import DeleteButton from './DeleteButton';
 
 const NewItem = ({ item, index, toDelete }) => (
     <div key={index}>
-      <p>My note: {item.text}</p>
-      <p>Created: {item.created}</p>
+        <b><i>Title:</i> {item.title}</b>
+      <p><b><i>My note:</i></b> {item.text}</p>
+      <p><i>Created: {item.created}</i></p>
       <DeleteButton toDelete={toDelete} index={index}/>
     </div>
 

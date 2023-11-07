@@ -6,27 +6,30 @@ import NewNote from './NewNote';
 
 export default function Note() {
     const [inputValue, setInputValue] = useState('')
+    const [title, setTitle] = useState('');
     const [todoList, setToDoList] = useState([])
 
-    function addTodo(value) {
-        if (value.trim().length === 0) {
+    function addTodo() {
+        if (inputValue.trim().length === 0) {
         return; 
         }
         const newTodo = {
-            text: value,
+            title: title,
+            text: inputValue,
             created: moment().format('MMM Do h:mm A'),
         };
         const newToDoList = [newTodo,...todoList];
-        // todoList.push(value)
         setToDoList(newToDoList);
-        setInputValue('')
+        setInputValue('');
+        setTitle('');
     }
 
     return (
         <>
             <div className='note'>
+                <input className='input-title' placeholder='Title' type="text" title={title} value={title} onChange={(event) => { setTitle(event.target.value) }} />
                 <textarea className='input-note' placeholder='Add new note ...' type="text" value={inputValue} onChange={(event) => { setInputValue(event.target.value) }} />
-                <button onClick={() => addTodo(inputValue)}>Add</button>
+                <button onClick={() => addTodo(title, inputValue)}>Add</button>
                 <NewNote todoList={todoList} setToDoList={setToDoList} />
             </div>
         </>)

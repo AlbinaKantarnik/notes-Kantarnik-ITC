@@ -3,27 +3,37 @@
     flex-direction: column;
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
-textarea{
+
+textarea {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
-.input-note {
-margin-bottom: 20px;
-padding: 10px;
-border-radius: 10px;
-height: 100px;
-resize: none;
+.input-title {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    font-size: 1em;
 }
-.noteDiv{
+
+.input-note {
+    margin-bottom: 20px;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 10px;
+    height: 100px;
+    resize: none;
+}
+
+.noteDiv {
     display: flex;
     flex-direction: column;
 }
 
-.noteDiv div{
+.noteDiv div {
     padding: 8px;
-   border: 1px solid rgb(139 141 92);
-   margin: 10px 0;
-   background-color: aliceblue;
-   border-radius: 10px;
-   text-align: left;
+    border: 1px solid rgb(139 141 92);
+    margin: 10px 0;
+    background-color: rgb(241 216 203 / 84%);;
+    border-radius: 10px;
+    text-align: left;
 }
