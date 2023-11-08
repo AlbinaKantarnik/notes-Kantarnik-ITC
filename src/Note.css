@@ -4,10 +4,6 @@
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
-textarea {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-}
-
 .input-title {
     padding: 10px;
     border-radius: 10px;
@@ -16,11 +12,11 @@ textarea {
 }
 
 .input-note {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     margin-bottom: 20px;
     font-size: 1em;
     padding: 10px;
     border-radius: 10px;
-    height: 100px;
     resize: none;
 }
 
@@ -33,7 +29,7 @@ textarea {
     padding: 8px;
     border: 1px solid rgb(139 141 92);
     margin: 10px 0;
-    background-color: rgb(241 216 203 / 84%);;
+    background-color: rgb(241 216 203 / 84%);
     border-radius: 10px;
     text-align: left;
 }

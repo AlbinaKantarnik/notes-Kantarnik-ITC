@@ -1,6 +1,6 @@
 
 import './Note.css'
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import moment from 'moment';
 import NewNote from './NewNote';
 
@@ -23,6 +23,23 @@ export default function Note() {
         setInputValue('');
         setTitle('');
     }
+
+    useEffect(() => {
+        function resizeTextarea() {
+            var textarea = document.getElementsByTagName('textarea')[0];
+            textarea.addEventListener('keydown', resize);
+        }
+
+        function resize() {
+            var el = this;
+            setTimeout(function() {
+                el.style.cssText = 'height:auto; padding:0';
+                el.style.cssText = 'height:' + el.scrollHeight + 'px';
+            }, 3);
+        }
+
+        resizeTextarea(); 
+    }, []); 
 
     return (
         <>

@@ -10,9 +10,6 @@
   background-color: #de9f7cb5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  
-}
 @media screen and (max-width: 639px) {
     
   body {

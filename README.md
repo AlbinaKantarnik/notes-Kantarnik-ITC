@@ -14,3 +14,9 @@
 -in the form add an input for note title;
 -in the note, display the title above the text;
 * The user can add a note without a title (then no title will be displayed in the note), but the note’s text is mandatory.
+
+## Milestone 3.1
+* Add the ability to resize your textarea dynamically when the user types text (add/remove rows)
+* Remove the manual resize handler in the bottom right corner of the textarea 
+
+## Milestone 4
