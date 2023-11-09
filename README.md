@@ -20,3 +20,8 @@
 * Remove the manual resize handler in the bottom right corner of the textarea 
 
 ## Milestone 4
+* Add a popup modal to show a note
+* When a note is clicked, the modal should show the note information
+
+## Milestone 5
+* 

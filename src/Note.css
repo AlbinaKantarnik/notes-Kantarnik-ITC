@@ -33,3 +33,20 @@
     border-radius: 10px;
     text-align: left;
 }
+pre {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+}
+.fade.modal.show{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 37%;
+    padding: 8px;
+    width: 250px;
+    border: 1px solid rgb(139 141 92);
+    margin: 10px 0;
+    background-color: rgba(255, 255, 255, 0.84);
+    border-radius: 10px;
+    text-align: left;
+}
