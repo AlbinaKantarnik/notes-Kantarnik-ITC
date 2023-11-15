@@ -2,10 +2,11 @@ import React from 'react';
 
 const DeleteButton = ({ toDelete, index }) => {
 
-    const deleteItem = () => {
+    const deleteItem = (e) => {
         const confirmDelete = window.confirm('Are you sure you want to delete your note?');
         if (confirmDelete) {
-            toDelete(index);
+            toDelete(index, e);
+            e.stopPropagation();
         }
     };
 

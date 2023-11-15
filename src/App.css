@@ -9,6 +9,9 @@
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   background-color: #de9f7cb5;
 }
+.modal-open{
+  padding-right: 0px !important;
+}
 p {
   margin-block-start: 0px;
   margin-block-end: 5px;
@@ -28,7 +31,9 @@ p {
   h1 {
       margin-bottom: 18px;
   }
-  
+  .noteDiv div {
+    width: 45%;
+  }
 }
 @media screen and (max-width: 450px) {
   .noteDiv div {
@@ -37,6 +42,10 @@ p {
   .noteDiv {
     display: flex;
     flex-direction: column;
+  }
+  .fade.modal.show {
+    padding-right:8px !important;
+    margin-left: 15% !important;
   }
 }
 @media screen and (max-width: 399px) {
@@ -48,6 +57,10 @@ p {
   }
   .noteDiv div {
     width: 100%;
+  }
+  .fade.modal.show {
+    padding-right: 8px !important;
+    margin-left: 15% !important;
   }
   .noteDiv {
     display: flex;

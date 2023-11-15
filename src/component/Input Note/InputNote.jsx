@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-export default function InputNote({ title, setTitle, inputValue, setInputValue, setChangesMade }) {
+export default function InputNote({ title, setTitle, inputValue, setInputValue, setChangesMade, todoList }) {
     const [originalTitle, setOriginalTitle] = useState(title);
     const [originalInputValue, setOriginalInputValue] = useState(inputValue);
 
@@ -30,7 +30,7 @@ export default function InputNote({ title, setTitle, inputValue, setInputValue, 
             setChangesMade(true);
         }
     };
-    
+
     return (
         <>
             <input

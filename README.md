@@ -33,9 +33,7 @@
 * Display the update date in the modal-note in addition to the created date.
 
 ## Milestone 6
-* Deploy the app to Netlify
+* Deploy the app to Netlify - https://kantarnik-albina-notes-itc.netlify.app/
 
 ## Milestone 7
 * Save the notes to users storage (localStorage). The notes should persist between reloads of the page
-
-
