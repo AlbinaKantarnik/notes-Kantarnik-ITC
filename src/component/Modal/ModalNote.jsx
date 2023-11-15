@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import moment from 'moment';
-import InputNote from './InputNote';
+import InputNote from '../Input Note/InputNote';
 import './ModalNote.css'
 
 export default function ModalNote({ showModal, setShowModal, todoList, setToDoList, changesData, setChangesData, displayedData, setSelectedIndex, selectedIndex, setDisplayedData})  {
