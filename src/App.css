@@ -9,7 +9,10 @@
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   background-color: #de9f7cb5;
 }
-
+p {
+  margin-block-start: 0px;
+  margin-block-end: 5px;
+}
 @media screen and (max-width: 639px) {
     
   body {
@@ -27,6 +30,15 @@
   }
   
 }
+@media screen and (max-width: 450px) {
+  .noteDiv div {
+    width: 100%;
+  }
+  .noteDiv {
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 399px) {
   body {
       font-size: 12px;
@@ -34,7 +46,12 @@
   #root {
       width: 100%;
   }
-  .fade.modal.show{
-    left: 10%;
+  .noteDiv div {
+    width: 100%;
+  }
+  .noteDiv {
+    display: flex;
+    flex-direction: column;
   }
 }
+

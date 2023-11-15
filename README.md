@@ -24,4 +24,10 @@
 * When a note is clicked, the modal should show the note information
 
 ## Milestone 5
-* 
+* In the modal, add the ability to edit the note (title and body). 
+* Use your original form component in the modal to edit the note, so the form component will be used for your main form and in the modal (re-usable). If needed, update your form component to be usable as a new note form and as an update note form. (It will need to include both functionalities, but you will need to differentiate between them).
+* After the note is edited, add an updated date to the note object.
+* Display the update date in the note in addition to the created date and the note text.
+
+## Milestone 5.1 (extra)
+* Display the update date in the modal-note in addition to the created date.

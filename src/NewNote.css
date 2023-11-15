@@ -1,0 +1,8 @@
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+}
+.modal-header img{
+    width: 10px;
+    cursor: 'pointer'
+}
