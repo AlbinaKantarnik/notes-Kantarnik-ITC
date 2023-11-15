@@ -1,5 +1,5 @@
 import React from 'react';
-import DeleteButton from './DeleteButton';
+import DeleteButton from '../Delete Button/DeleteButton';
 
 const NewItem = ({ item, index, toDelete, handleShowModal })=> {
   const showChanges = item.changesData !== undefined && item.changesData !== null;

@@ -2,8 +2,8 @@
 import './Note.css'
 import React, { useState, useEffect} from 'react';
 import moment from 'moment';
-import NewNote from './NewNote';
-import InputNote from './InputNote';
+import NewNote from '../New Note/NewNote';
+import InputNote from '../Input Note/InputNote';
 
 export default function Note() {
     const [inputValue, setInputValue] = useState('')
@@ -11,6 +11,21 @@ export default function Note() {
     const [todoList, setToDoList] = useState([])
     const [changesData, setChangesData] = useState('');
 
+    useEffect(() => {
+            if(todoList.length > 0) {
+            localStorage.setItem('todoList', JSON.stringify(todoList));
+            }
+        }, [todoList]);
+
+    useEffect(() => {
+        const savedNotes = JSON.parse(localStorage.getItem('todoList'));
+        if (!savedNotes || savedNotes.length === 0) {
+            setToDoList([]);
+        } else {
+            setToDoList(savedNotes);
+        }
+    }, []);
+    
     function addTodo() {
         if (inputValue.trim().length === 0) {
         return; 
@@ -47,10 +62,9 @@ export default function Note() {
     return (
         <>
             <div className='note'>
-                <InputNote title={title} setTitle={setTitle} inputValue={inputValue} setInputValue={setInputValue}/>
-                <button onClick={() => addTodo(title, inputValue)}>Add</button>
+                <InputNote title={title} setTitle={setTitle} inputValue={inputValue} todoList={todoList} setInputValue={setInputValue}/>
+                <button onClick={() => addTodo(title, inputValue)}>Add note</button>
             </div>    
             <NewNote changesData={changesData} setChangesData={setChangesData} todoList={todoList} setToDoList={setToDoList} />
-            
         </>)
 }
