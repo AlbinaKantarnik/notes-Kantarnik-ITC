@@ -60,7 +60,7 @@ export default function ModalNote({ showModal, setShowModal, todoList, setToDoLi
             <Modal.Header>
                 <Modal.Title></Modal.Title>
                 <img
-                    src="./img/xmark-solid.svg"
+                    src="./xmark-solid.svg"
                     alt="Delete"
                     onClick={handleCloseModal}
                 />

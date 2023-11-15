@@ -21,7 +21,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-image: url(/img/iii 1.jpg);
+  background-image: url(./iii1.jpg);
 }
 
 h1 {
